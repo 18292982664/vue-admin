@@ -1,5 +1,4 @@
 <template>
-  <div class="home">home88</div>
 </template>
 
 <script lang="ts">

@@ -1,26 +1,79 @@
 
 import Mock from 'mockjs'
 const Random = Mock.Random
-const headerList = Mock.mock({
-  'data|10': [ // 生成100条数据 数组
+interface NavItem {
+  shopId: number,
+  shopMsg: string,
+  shopName: string,
+  food: string
+}
+const headerList = {
+  data: [
     {
-      'shopId|+1': 1, // 生成商品id，自增1
-      'shopMsg': '@ctitle(4)', // 生成商品信息，长度为10个汉字
-      'shopName': '@cname', // 生成商品名 ， 都是中国人的名字
-      'food|7': [ // 每个商品中再随机生成七个food
+      id: 0,
+      title: "仪表板",
+      path:"",
+      children: [
         {
-          'foodName': '@cname', // food的名字
-          'foodPic': "@Image('100x40','#c33', '#ffffff','小可爱')", // 生成随机图片，大小/背景色/字体颜色/文字信息
-          'aname|14': [
-            {
-              'aname': '@cname',
-              'aprice|30-60': 20
-            }
-          ]
+          subId: 0,
+          shopName: "文件1"
+        }, {
+          subId: 1,
+          shopName: "文件2"
+        },
+        {
+          subId: 2,
+          shopName: "文件3"
+        },
+        {
+          subId: 3,
+          shopName: "文件4"
         }
       ]
+    },
+    {
+      id: 1,
+      title: "统计",
+      children: [
+        {
+          subId: 4,
+          shopName: "文件111"
+        },
+        {
+          subId: 5,
+          shopName: "文件122"
+        },
+        {
+          subId: 6,
+          shopName: "文件133"
+        },
+        {
+          subId: 7,
+          shopName: "文件144"
+        }
+      ]
+    },
+    {
+      id: 2,
+      title: "表单"
+    },
+    {
+      id: 3,
+      title: "表格"
+    },
+    {
+      id: 4,
+      title: "地图"
+    },
+    {
+      id: 5,
+      title: "图标"
+    },
+    {
+      id: 6,
+      title: "引导页"
     }
   ]
-})
+}
 
 export default headerList

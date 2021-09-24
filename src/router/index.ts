@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import Home from '../views/Home.vue'
-
+import menu from './menu'
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
@@ -19,7 +19,7 @@ const routes: Array<RouteRecordRaw> = [
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
-  routes
+  routes:[...(menu)]
 })
 
 export default router
