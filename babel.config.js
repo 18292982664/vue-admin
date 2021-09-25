@@ -5,7 +5,7 @@ module.exports = {
   plugins: [
     [
       "import",
-      { libraryName: "Antd", libraryDirectory: "es", style: true }
+      { libraryName: "Antd", libraryDirectory: "es", style: true ,style: (name) => `${name}/style/less`,}
     ]
   ]
 }

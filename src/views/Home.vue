@@ -26,6 +26,6 @@ export default defineComponent({
 </script>
 <style scoped lang="less">
 .a {
-    background: @green;
+    background:@green;
 }
 </style>
