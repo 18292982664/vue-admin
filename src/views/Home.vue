@@ -1,5 +1,5 @@
 <template>
-    <div class="a"></div>
+    <div class="a">99995959</div>
 </template>
 
 <script lang="ts">
@@ -27,5 +27,6 @@ export default defineComponent({
 <style scoped lang="less">
 .a {
     background:@green;
+    
 }
 </style>

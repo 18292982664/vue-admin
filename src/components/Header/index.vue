@@ -60,7 +60,7 @@ export default defineComponent({
         }
         const state: init = reactive({
             windowWidth: document.documentElement.clientWidth + "px", //实时屏幕宽度
-            windowHeight: document.documentElement.clientHeight + "px", //实时屏幕高度
+            windowHeight: document.documentElement.clientHeight - 60 + "px", //实时屏幕高度
             dataList: [],
             collapsed: false,
             selectedKeys: ["1"],
